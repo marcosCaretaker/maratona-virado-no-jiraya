@@ -16,6 +16,15 @@ public class Student {
         this.seminar = seminar;
     }
 
+    public void print(){
+        System.out.println("Student Information");
+        System.out.println("Name: "+this.name);
+        System.out.println("Age: "+this.age);
+        if(seminar == null) return;
+        System.out.println("Seminar: "+this.seminar.getTitle());
+        System.out.println("Seminar local: "+this.seminar.getLocal());
+    }
+
     public Seminar getSeminar() {
         return seminar;
     }

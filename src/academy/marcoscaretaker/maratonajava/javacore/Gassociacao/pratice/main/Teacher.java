@@ -16,6 +16,16 @@ public class Teacher {
         this.seminars = seminars;
     }
 
+    public void print(){
+        System.out.println("Teacher Information");
+        System.out.println("Name: "+this.name);
+        System.out.println("Speciality: "+this.specialty);
+        if(seminars == null) return;
+        for(Seminar seminar:seminars){
+            System.out.println(seminar.getTitle()+" "+seminar.getLocal());
+        }
+    }
+
     public Seminar[] getSeminars() {
         return seminars;
     }

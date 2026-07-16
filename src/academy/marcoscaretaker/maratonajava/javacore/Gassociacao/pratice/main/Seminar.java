@@ -16,6 +16,20 @@ public class Seminar {
         this.local = local;
     }
 
+    public void print(){
+        System.out.println("Seminar Information");
+        System.out.println("Title: "+this.title);
+        System.out.println("Local: "+this.local.getAdress());
+        if(students == null) return;
+        System.out.println("Students: ");
+        for(Student student:students){
+            System.out.println(student.getName()+" "+student.getAge());
+        }
+
+    }
+
+
+
     public Student[] getStudents() {
         return students;
     }
@@ -24,8 +38,8 @@ public class Seminar {
         this.students = students;
     }
 
-    public Local getLocal() {
-        return local;
+    public String getLocal() {
+        return local.getAdress();
     }
 
     public void setLocal(Local local) {
