@@ -19,7 +19,7 @@ public class Seminar {
     public void print(){
         System.out.println("Seminar Information");
         System.out.println("Title: "+this.title);
-        System.out.println("Local: "+this.local.getAdress());
+        System.out.println("Local: "+this.local.getAddress());
         if(students == null) return;
         System.out.println("Students: ");
         for(Student student:students){
@@ -39,7 +39,7 @@ public class Seminar {
     }
 
     public String getLocal() {
-        return local.getAdress();
+        return local.getAddress();
     }
 
     public void setLocal(Local local) {

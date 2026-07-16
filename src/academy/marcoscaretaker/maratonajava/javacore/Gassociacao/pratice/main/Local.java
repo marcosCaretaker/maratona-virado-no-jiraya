@@ -1,16 +1,16 @@
 package academy.marcoscaretaker.maratonajava.javacore.Gassociacao.pratice.main;
 
 public class Local {
-    private String adress;
+    private String address;
     private Seminar seminar;
 
 
-    public Local(String adress) {
-        this.adress = adress;
+    public Local(String address) {
+        this.address = address;
     }
 
-    public Local(String adress, Seminar seminar) {
-        this.adress = adress;
+    public Local(String address, Seminar seminar) {
+        this.address = address;
         this.seminar = seminar;
     }
 
@@ -22,11 +22,11 @@ public class Local {
         this.seminar = seminar;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
