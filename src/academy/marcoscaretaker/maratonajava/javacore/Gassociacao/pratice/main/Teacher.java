@@ -20,11 +20,12 @@ public class Teacher {
         System.out.println("Teacher Information");
         System.out.println("Name: "+this.name);
         System.out.println("Speciality: "+this.specialty);
-        if(seminars == null) return;
+        if(this.seminars == null) return;
+        System.out.println("---SEMINARIOS NO PROFESSOR -- "+seminars.length);
         for(Seminar seminar:seminars){
-            System.out.println(seminar.getTitle()+" "+seminar.getLocal());
+            System.out.println(seminar.getTitle()+"-"+seminar.getLocal());
+            }
         }
-    }
 
     public Seminar[] getSeminars() {
         return seminars;
@@ -32,6 +33,10 @@ public class Teacher {
 
     public void setSeminars(Seminar[] seminars) {
         this.seminars = seminars;
+    }
+
+    public void setSeminars(Seminar seminar) {
+        this.seminars = new Seminar[]{seminar};
     }
 
     public String getName() {

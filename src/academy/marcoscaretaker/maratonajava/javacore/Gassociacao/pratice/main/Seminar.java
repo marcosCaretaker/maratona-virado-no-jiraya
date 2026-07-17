@@ -1,41 +1,85 @@
 package academy.marcoscaretaker.maratonajava.javacore.Gassociacao.pratice.main;
 
+import java.util.Objects;
+
 public class Seminar {
     private String title;
     private Local local;
     private Student[] students;
+    private Teacher[] teachers;
 
     public Seminar(String title, Local local) {
         this.title = title;
         this.local = local;
     }
 
-    public Seminar(String title,Local local, Student[] students) {
+    public Seminar(String title, Local local, Student[] students) {
         this.title = title;
         this.students = students;
         this.local = local;
     }
 
-    public void print(){
-        System.out.println("Seminar Information");
-        System.out.println("Title: "+this.title);
-        System.out.println("Local: "+this.local.getAddress());
-        if(students == null) return;
-        System.out.println("Students: ");
-        for(Student student:students){
-            System.out.println(student.getName()+" "+student.getAge());
-        }
+    public Seminar(String title, Local local, Student[] students, Teacher[] teachers) {
+        this.title = title;
+        this.local = local;
+        this.students = students;
+        this.teachers = teachers;
+    }
 
+    public void print() {
+        System.out.println("%%%%%%%%%%%%%%%%%%%% Seminar Information %%%%%%%%%%%%%%%%%%%%");
+        System.out.println("Title: " + this.title);
+        System.out.println("Local: " + this.local.getAddress());
+        if (teachers != null) {
+            System.out.println("**************** Teachers ****************");
+            for (Teacher teacher : teachers) {
+                System.out.println(teacher.getName() + "-" + teacher.getSpecialty());
+            }
+        }
+        if (this.students == null) return;
+        System.out.println("**************** Students ****************");
+        for (Student student : this.students) {
+            if (student != null) {
+                System.out.println(student.getName() + "-" + student.getAge());
+            }
+        }
+        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
     }
 
 
+    public Teacher[] getTeachers() {
+        return teachers;
+    }
+
+    public void setTeachers(Teacher[] teachers) {
+        for (Teacher teacher : teachers) {
+            teacher.setSeminars(this);
+        }
+        this.teachers = teachers;
+    }
 
     public Student[] getStudents() {
         return students;
     }
 
     public void setStudents(Student[] students) {
-        this.students = students;
+        if (students == null) return;
+
+        int i = students.length;
+        int j = 0;
+        Student[] studentsArray = new Student[i];
+
+        for (Student student : students) {
+            if (student.getSeminar() != null) {
+                System.out.println("Estudante " + student.getName() + " já está no seminário " + student.getSeminar().getTitle() + ".");
+            } else {
+                student.setSeminar(this);
+                studentsArray[j] = student;
+                j++;
+            }
+        }
+
+        this.students = studentsArray;
     }
 
     public String getLocal() {
