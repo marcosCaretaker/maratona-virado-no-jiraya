@@ -14,21 +14,18 @@ public class Seminar {
     }
 
     public Seminar(String title, Local local, Student[] students) {
-        this.title = title;
-        this.local = local;
+        this(title,local);
         this.setStudents(students);
     }
 
     public Seminar(String title, Local local, Teacher[] teachers) {
-        this.title = title;
+        this(title,local);
         this.setTeachers(teachers);
-        this.local = local;
 
     }
 
     public Seminar(String title, Local local, Student[] students, Teacher[] teachers) {
-        this.title = title;
-        this.local = local;
+        this(title,local);
         this.setStudents(students);
         this.setTeachers(teachers);
     }
