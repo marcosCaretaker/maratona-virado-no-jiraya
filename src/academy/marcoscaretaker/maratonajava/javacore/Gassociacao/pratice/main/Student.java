@@ -17,12 +17,15 @@ public class Student {
     }
 
     public void print(){
-        System.out.println("Student Information");
+        System.out.println(" ");
+        System.out.println("########## Student Information ##########");
         System.out.println("Name: "+this.name);
         System.out.println("Age: "+this.age);
         if(seminar == null) return;
         System.out.println("Seminar: "+this.seminar.getTitle());
         System.out.println("Seminar local: "+this.seminar.getLocal());
+        System.out.println("########## ########## ##########");
+        System.out.println(" ");
     }
 
     public Seminar getSeminar() {

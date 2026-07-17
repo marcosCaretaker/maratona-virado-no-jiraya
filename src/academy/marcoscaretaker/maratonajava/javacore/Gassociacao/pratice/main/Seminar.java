@@ -15,18 +15,26 @@ public class Seminar {
 
     public Seminar(String title, Local local, Student[] students) {
         this.title = title;
-        this.students = students;
         this.local = local;
+        this.setStudents(students);
+    }
+
+    public Seminar(String title, Local local, Teacher[] teachers) {
+        this.title = title;
+        this.setTeachers(teachers);
+        this.local = local;
+
     }
 
     public Seminar(String title, Local local, Student[] students, Teacher[] teachers) {
         this.title = title;
         this.local = local;
-        this.students = students;
-        this.teachers = teachers;
+        this.setStudents(students);
+        this.setTeachers(teachers);
     }
 
     public void print() {
+        System.out.println(" ");
         System.out.println("%%%%%%%%%%%%%%%%%%%% Seminar Information %%%%%%%%%%%%%%%%%%%%");
         System.out.println("Title: " + this.title);
         System.out.println("Local: " + this.local.getAddress());
@@ -44,6 +52,7 @@ public class Seminar {
             }
         }
         System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+        System.out.println(" ");
     }
 
 
@@ -71,8 +80,13 @@ public class Seminar {
 
         for (Student student : students) {
             if (student.getSeminar() != null) {
-                System.out.println("Estudante " + student.getName() + " já está no seminário " + student.getSeminar().getTitle() + ".");
+                System.out.println(" ");
+                System.out.println("--- ERROR ---- " + this.title + " Estudante " + student.getName() + " já está no seminário " + student.getSeminar().getTitle() + ".");
+                System.out.println(" ");
             } else {
+                System.out.println(" ");
+                System.out.println("----- ADICIONAMOS ----- " + student.getName() + " dentro do seminario: " + this.title);
+                System.out.println(" ");
                 student.setSeminar(this);
                 studentsArray[j] = student;
                 j++;

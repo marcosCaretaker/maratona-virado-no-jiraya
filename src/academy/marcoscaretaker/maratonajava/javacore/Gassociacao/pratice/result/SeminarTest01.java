@@ -29,6 +29,8 @@ public class SeminarTest01 {
         Student studentB = new Student("Aiko Tanaka",16);
         Student studentC = new Student("Ryuu Kazemi",14);
 
+        Student studentA1 = new Student("Naruto",22);
+
         Student[] studentsA = {studentA,studentB,studentC};
 
         Teacher teacherA = new Teacher("Daiki","Controle de energia espiritual");
@@ -46,9 +48,12 @@ public class SeminarTest01 {
         teacher1.setSeminars(seminars);
         teacher2.setSeminars(seminars);
 
+        teacherA.setSeminars(seminar3);
+        teacherB.setSeminars(seminar3);
+
         teacher3.setSeminars(seminars);
-        seminar1.setStudents(new Student[]{student1,student2,studentC});
-        seminar2.setStudents(new Student[]{student3});
+        seminar1.setStudents(students);
+        seminar2.setStudents(students);
 
         seminar1.print();
         seminar2.print();
@@ -70,6 +75,19 @@ public class SeminarTest01 {
         studentA.print();
         studentB.print();
         studentC.print();
+
+        System.out.println(" ---- --- TESTE DE ADICIONAR ALUNO COM SEMINARIO EM SEMINARIO SEM ALUNO --- ----");
+
+        seminar2.setStudents(new Student[]{student1});
+        seminar2.print();
+        student1.print();
+
+        System.out.println(" ---- --- TESTE DE ADICIONAR ALUNO SEM SEMINARIO EM SEMINARIO COM ALUNO --- ----");
+        System.out.println(" ---- --- QUE DEVE ACONTECER POIS ESTOU USANDO ARRAY BRUTO --- ----");
+        seminar3.setStudents(new Student[]{studentA1});
+        seminar3.print();
+        studentA1.print();
+
 
     }
 }

@@ -17,14 +17,17 @@ public class Teacher {
     }
 
     public void print(){
-        System.out.println("Teacher Information");
+        System.out.println(" ");
+        System.out.println("########## Teacher Information ##########");
         System.out.println("Name: "+this.name);
         System.out.println("Speciality: "+this.specialty);
         if(this.seminars == null) return;
         System.out.println("---SEMINARIOS NO PROFESSOR -- "+seminars.length);
         for(Seminar seminar:seminars){
             System.out.println(seminar.getTitle()+"-"+seminar.getLocal());
+            System.out.println("########## ########## ##########");
             }
+        System.out.println(" ");
         }
 
     public Seminar[] getSeminars() {
