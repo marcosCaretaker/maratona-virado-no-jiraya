@@ -9,9 +9,6 @@ public class Anime {
     // 3 - The initialization block runs
     // 4 - The builder is executed
 
-    // text to test whether what Gemini said is true
-
-
     static {
         System.out.println("Inside static initialization block 1");
         episodes = new int[100];

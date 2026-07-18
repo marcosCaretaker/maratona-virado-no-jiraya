@@ -3,8 +3,21 @@ package academy.marcoscaretaker.maratonajava.javacore.Hheranca.domain;
 public class Employee extends Person{
     private double salary;
 
+    static {
+        System.out.println("Bloco estático de inicialização de Employee");
+    }
+
+    {
+        System.out.println("Bloco de inicialização de Employee 1");
+    }
+
+    {
+        System.out.println("Bloco de inicialização de Employee 2");
+    }
+
     public Employee(String name){
         super(name);
+        System.out.println("Dentro do construtor de Employee");
     }
 
     @Override

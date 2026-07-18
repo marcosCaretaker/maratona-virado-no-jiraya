@@ -5,8 +5,22 @@ public class Person {
     protected String cpf;
     protected Address address;
 
+    static {
+        System.out.println("Bloco estático de inicialização de Person");
+    }
+
+     {
+        System.out.println("Bloco de inicialização de Person 1");
+    }
+
+     {
+        System.out.println("Bloco de inicialização de Person 2");
+    }
+
+
     public Person(String name) {
         this.name = name;
+        System.out.println("Dentro do construtor de Person");
     }
 
     public Person(String name, String cpf) {
