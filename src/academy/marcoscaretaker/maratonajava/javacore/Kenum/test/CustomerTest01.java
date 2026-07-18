@@ -13,6 +13,10 @@ public class CustomerTest01 {
         System.out.println("Customer 2: "+customer2.toString());
 
         System.out.println(PaymentType.PIX.calculateDiscount(100));
+        TypeCustomer individual = TypeCustomer.valueOf("INDIVIDUAL");
+        System.out.println(individual.getPersonReport());
+        TypeCustomer corporate = TypeCustomer.typeCustomerForPersonReport("Corporate");
+        System.out.println(corporate);
 
     }
 }

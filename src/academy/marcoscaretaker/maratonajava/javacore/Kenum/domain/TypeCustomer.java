@@ -12,6 +12,15 @@ public enum TypeCustomer {
         this.personReport = personReport;
     }
 
+    public static TypeCustomer typeCustomerForPersonReport(String personReport){
+        for(TypeCustomer typeCustomer: values()){
+            if(typeCustomer.getPersonReport().equals(personReport)){
+                return typeCustomer;
+            }
+        }
+        return null;
+    }
+
     public int getValue() {
         return value;
     }
