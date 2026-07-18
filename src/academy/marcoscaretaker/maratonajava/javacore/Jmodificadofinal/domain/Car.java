@@ -6,6 +6,11 @@ public class Car {
     public final Buyer BUYER = new Buyer();
 
 
+    public final void print(){
+        System.out.println(this.name);
+    }
+
+
     @Override
     public String toString() {
         return "Car{" +
