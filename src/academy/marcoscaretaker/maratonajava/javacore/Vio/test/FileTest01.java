@@ -1,4 +1,4 @@
-package academy.marcoscaretaker.maratonajava.Vio.test;
+package academy.marcoscaretaker.maratonajava.javacore.Vio.test;
 
 import java.io.File;
 import java.io.IOException;

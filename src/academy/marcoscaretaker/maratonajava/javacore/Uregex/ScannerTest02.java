@@ -1,4 +1,4 @@
-package academy.marcoscaretaker.maratonajava.Uregex;
+package academy.marcoscaretaker.maratonajava.javacore.Uregex;
 
 import java.util.Scanner;
 
