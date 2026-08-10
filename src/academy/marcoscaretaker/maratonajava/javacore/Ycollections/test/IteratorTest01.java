@@ -4,12 +4,13 @@ import academy.marcoscaretaker.maratonajava.javacore.Ycollections.domain.Movie;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class IteratorTest01 {
     public static void main(String[] args) {
         double movieReviewCut = 8;
-        List<Movie> movies = new ArrayList<>();
+        List<Movie> movies = new LinkedList<>();
         movies.add(new Movie(5L, "Fast and Furious 5", 2011, 7.3));
         movies.add(new Movie(2L, "Pulp Fiction", 1994, 8.8));
         movies.add(new Movie(4L, "Interstellar", 2014, 8.7));

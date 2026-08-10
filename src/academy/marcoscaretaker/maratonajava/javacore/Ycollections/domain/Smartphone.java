@@ -16,6 +16,13 @@ public class Smartphone {
         this.model = model;
     }
 
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
 
     @Override
     public boolean equals(Object obj) {

@@ -7,10 +7,10 @@ import java.util.Objects;
 public class Movie implements Comparable<Movie>{
     private Long id;
     private String name;
-    private double yearOfRelease;
+    private int yearOfRelease;
     private double movieReview;
 
-    public Movie(Long id, String name, double releaseDate) {
+    public Movie(Long id, String name, int releaseDate) {
         Objects.requireNonNull(id);
         Objects.requireNonNull(name);
         this.id = id;
@@ -18,19 +18,14 @@ public class Movie implements Comparable<Movie>{
         this.yearOfRelease = releaseDate;
     }
 
-    public Movie(Long id, String name, double yearOfRelease, double movieReview) {
+    public Movie(Long id, String name, int yearOfRelease, double movieReview) {
         this(id,name,yearOfRelease);
         this.movieReview = movieReview;
     }
 
     @Override
     public String toString() {
-        return "Movie{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", yearOfRelease=" + yearOfRelease +
-                ", movieReview=" + movieReview +
-                '}';
+        return this.name+" released in "+yearOfRelease+" score review: "+this.movieReview;
     }
 
     @Override
@@ -69,11 +64,11 @@ public class Movie implements Comparable<Movie>{
         this.name = name;
     }
 
-    public double getYearOfRelease() {
+    public int getYearOfRelease() {
         return yearOfRelease;
     }
 
-    public void setYearOfRelease(double yearOfRelease) {
+    public void setYearOfRelease(int yearOfRelease) {
         this.yearOfRelease = yearOfRelease;
     }
 
