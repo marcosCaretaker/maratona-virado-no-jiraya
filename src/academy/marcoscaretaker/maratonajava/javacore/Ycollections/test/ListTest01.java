@@ -1,6 +1,5 @@
 package academy.marcoscaretaker.maratonajava.javacore.Ycollections.test;
 
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 

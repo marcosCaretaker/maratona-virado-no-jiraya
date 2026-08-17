@@ -1,7 +1,5 @@
 package academy.marcoscaretaker.maratonajava.javacore.Qstring.test;
 
-import java.util.Locale;
-
 public class StringTest02 {
     public static void main(String[] args) {
         String name = "    Walker    "; // Paul Walker :)

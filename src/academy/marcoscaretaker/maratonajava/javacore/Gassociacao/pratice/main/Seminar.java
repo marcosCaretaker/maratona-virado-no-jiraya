@@ -1,7 +1,5 @@
 package academy.marcoscaretaker.maratonajava.javacore.Gassociacao.pratice.main;
 
-import java.util.Objects;
-
 public class Seminar {
     private String title;
     private Local local;

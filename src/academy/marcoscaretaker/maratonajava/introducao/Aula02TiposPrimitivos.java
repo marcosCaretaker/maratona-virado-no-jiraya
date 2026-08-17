@@ -1,7 +1,5 @@
 package academy.marcoscaretaker.maratonajava.introducao;
 
-import java.security.spec.RSAOtherPrimeInfo;
-
 public class Aula02TiposPrimitivos {
     public static void main(String[] args) {
         // int, double, float, char, byte, short, long, boolean

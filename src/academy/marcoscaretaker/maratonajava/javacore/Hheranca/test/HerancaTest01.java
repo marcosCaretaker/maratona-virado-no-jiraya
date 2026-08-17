@@ -1,6 +1,5 @@
 package academy.marcoscaretaker.maratonajava.javacore.Hheranca.test;
 
-import academy.marcoscaretaker.maratonajava.javacore.Bintroducaometodos.pratice.domain.Funcionario;
 import academy.marcoscaretaker.maratonajava.javacore.Hheranca.domain.Address;
 import academy.marcoscaretaker.maratonajava.javacore.Hheranca.domain.Employee;
 import academy.marcoscaretaker.maratonajava.javacore.Hheranca.domain.Person;

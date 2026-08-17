@@ -1,7 +1,7 @@
 package academy.marcoscaretaker.maratonajava.javacore.Gassociacao.test;
 
-import academy.marcoscaretaker.maratonajava.javacore.Gassociacao.domain.Team;
 import academy.marcoscaretaker.maratonajava.javacore.Gassociacao.domain.FootballPlayer;
+import academy.marcoscaretaker.maratonajava.javacore.Gassociacao.domain.Team;
 
 public class FootballPlayerTest03 {
     public static void main(String[] args) {

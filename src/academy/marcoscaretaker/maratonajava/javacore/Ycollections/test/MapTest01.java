@@ -1,6 +1,5 @@
 package academy.marcoscaretaker.maratonajava.javacore.Ycollections.test;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

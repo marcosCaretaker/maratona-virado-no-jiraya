@@ -2,8 +2,6 @@ package academy.marcoscaretaker.maratonajava.javacore.Ycollections.test;
 
 import academy.marcoscaretaker.maratonajava.javacore.Ycollections.domain.Movie;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 

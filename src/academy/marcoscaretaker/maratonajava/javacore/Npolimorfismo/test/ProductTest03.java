@@ -2,7 +2,6 @@ package academy.marcoscaretaker.maratonajava.javacore.Npolimorfismo.test;
 
 import academy.marcoscaretaker.maratonajava.javacore.Npolimorfismo.domain.Computer;
 import academy.marcoscaretaker.maratonajava.javacore.Npolimorfismo.domain.Product;
-import academy.marcoscaretaker.maratonajava.javacore.Npolimorfismo.domain.Television;
 import academy.marcoscaretaker.maratonajava.javacore.Npolimorfismo.domain.Tomato;
 import academy.marcoscaretaker.maratonajava.javacore.Npolimorfismo.service.TaxCalculator;
 
