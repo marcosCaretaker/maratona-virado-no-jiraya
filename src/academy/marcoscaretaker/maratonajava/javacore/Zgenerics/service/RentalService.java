@@ -1,0 +1,25 @@
+package academy.marcoscaretaker.maratonajava.javacore.Zgenerics.service;
+
+import java.util.List;
+
+public class RentalService<T> {
+    List<T> objectsAvailable;
+
+    public RentalService(List<T> objectsAvailable) {
+        this.objectsAvailable = objectsAvailable;
+    }
+
+    public T retrieveAvailableObject(){
+        System.out.println("Searching for any object available");
+        T t = objectsAvailable.remove(0);
+        System.out.println("Renting the object: "+t);
+        System.out.println("Available objects to rent: "+objectsAvailable);
+        return t;
+    }
+
+    public void returnRentObject(T t){
+        System.out.println("Returning object "+t);
+        objectsAvailable.add(t);
+        System.out.println("Available objects to rent: "+objectsAvailable);
+    }
+}
