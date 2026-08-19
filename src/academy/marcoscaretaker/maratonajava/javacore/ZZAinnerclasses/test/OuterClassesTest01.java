@@ -2,7 +2,6 @@ package academy.marcoscaretaker.maratonajava.javacore.ZZAinnerclasses.test;
 
 public class OuterClassesTest01 {
     private String name = "Patrick Jane";
-
     class Inner {
         public void printOuterClassAttribute() {
             System.out.println(name);
