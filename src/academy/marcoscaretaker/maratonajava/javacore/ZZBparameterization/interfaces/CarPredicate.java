@@ -4,4 +4,6 @@ import academy.marcoscaretaker.maratonajava.javacore.ZZBparameterization.domain.
 
 public interface CarPredicate {
     boolean test(Car car);
+//    (Parameters) -> <expression>
+//    (Car car) -> car.getColor().equals("blue");
 }

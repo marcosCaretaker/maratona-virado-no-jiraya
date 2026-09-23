@@ -3,7 +3,7 @@ package academy.marcoscaretaker.maratonajava.javacore.Ycollections.domain;
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Consumer {
+public class Consumer<T> {
     private Long id;
     private String name;
 
@@ -15,7 +15,7 @@ public class Consumer {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Consumer consumer = (Consumer) o;
+        Consumer<T> consumer = (Consumer<T>) o;
         return Objects.equals(id, consumer.id);
     }
 
