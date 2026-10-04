@@ -10,13 +10,13 @@ public class StreamTest03 {
     private static final List<LightNovel> lightNovels = new ArrayList<>(List.of(
             new LightNovel("Solo Leveling", 4.99),
             new LightNovel("Classroom Elite", 3.50),
-            new LightNovel("Chainsaw Man", 4.49),
             new LightNovel("Goblin Slayer", 6.25),
-            new LightNovel("Tokyo Ghoul", 5.49),
-            new LightNovel("Blue Lock", 2.99),
-            new LightNovel("Blue Lock", 2.99),
-            new LightNovel("Death Note", 10),
-            new LightNovel("Spy Family", 3.99)));
+            new LightNovel("Overlord", 5.99),
+            new LightNovel("Sword Art Online", 4.50),
+            new LightNovel("Re Zero", 4.99),
+            new LightNovel("No Game Life", 3.99),
+            new LightNovel("Toradora", 3.25),
+            new LightNovel("Konosuba", 3.99)));
 
     public static void main(String[] args) {
         Stream<LightNovel> stream = lightNovels.stream();
